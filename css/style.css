@@ -1,0 +1,268 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.button {
+    border: 1px solid #000;
+    color: #000;
+    padding: 1vh 3vh 1vh 3vh ;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 1vh;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  #botao{
+    display: flex;
+    justify-content: center;
+  }
+header{
+    width:100vw;
+    height:15vh;
+    border: 1px solid #000;
+    position: fixed;
+    background-color: #F8F8FF; 
+    
+}
+section{
+    width: 100vw;
+    min-height: 75vh;
+    border: 1px solid #000;
+    
+}
+nav ul {
+     display:flex;
+     flex-direction: row;
+     justify-content: space-around;     
+}
+nav ul li{
+    display: inline; 
+    padding: 15px
+}
+nav ul li a{
+    text-decoration: none;
+    padding: 10px 10px 10px 10px;
+}
+nav ul li a:hover{
+background-color: #2b6ca3;
+color: #ffff
+}
+nav ul li a:active{
+    background-color: rgb(248, 151, 151);
+}
+
+#logo{
+    width: 30vw;
+    margin: 0 auto;
+}
+#logo img{
+    width: 90%;
+}
+#h-sobre{
+    padding-top:15vh;
+}
+h1{
+    
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+}
+
+#img-sobre{
+    display: flex;
+    
+}
+#img-sobre div{ 
+    width: 50%;
+    align-self: flex-end;
+
+}
+#img-sobre div img{
+    width: 90%;
+    border: 1px solid #999;
+}
+#img-cursos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+}
+#img-cursos div{
+    width: 60%;
+    border: 1px solid #000;  
+}
+#img-cursos div img{
+    width: 100%;  
+}
+#img-cursos div p{
+    width: 100%;
+    padding: 1vh;
+    font-size: 20px;
+    background-color:  #E8E8E8;; 
+    text-align: center; 
+}
+#designer{
+    border-top: 5px solid #00EE76;
+}
+#programação{
+    border-top: 5px solid red;
+}
+#banco{
+    border-top: 5px solid #0000FF;
+}
+#planos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#planos div div{
+    width: 100%;
+    line-height: 5vh;
+    font-weight: bold;   
+}
+
+#cont{
+    text-align: left;
+    background-color: #ffff;    
+}
+#bronze div div{
+    padding-top: 1vh;
+    background-color: #CD950C;
+}
+#cor-bronze{
+    background-color: #DCDCDC;
+    text-align: center;
+    border: 1px solid #000   
+}
+#cont{
+    text-align: left;
+    background-color: #ffff; 
+}
+#prata div div{
+    padding-top: 1vh;
+    background-color: #E8E8E8;   
+}
+#cor-prata{
+    background-color:  #DCDCDC;
+    text-align: center;
+    border: 1px solid #000   
+}
+
+#ouro div div{
+    padding-top: 1vh;
+    background-color: #FFD700;
+    
+}
+#cor-ouro{
+    background-color: #DCDCDC;
+    text-align: center;
+    border: 1px solid #000   
+}
+#valores {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#valores div{
+    line-height: 3vh;  
+}
+#valores div div{
+    padding-left: 1vh;   
+}
+#valores p {
+    font-weight: bolder;
+}
+#qualidade{
+    border-left: 1vh solid #1874CD;  
+}
+#inovação{
+    border-left: 1vh solid #FFFF00;  
+}
+#eficiencia{
+    border-left: 1vh solid #FF0000;  
+}
+#pesquisa{
+    border-left: 1vh solid #E066FF;  
+}
+#compromisso{
+    border-left: 1vh solid #2E8B57;  
+}
+#dedicação{
+    border-left: 1vh solid #87CEFA;  
+}
+
+
+
+
+@media only screen and (min-width:980px){
+.container{
+flex-direction: row;
+justify-content: space-between;
+width: 100%;
+}
+section div{width: 30%;}
+
+#sobre div{
+    width: 50%;    
+}
+#sobre div p{
+    line-height: 4vh;
+    font-size: 4vh;     
+}
+header div{
+    display: flex;
+}
+#logo{
+    width: 20%;
+    margin: 0;
+    margin-left: 3vw;  
+}
+nav{
+    display: flex; 
+    width: 70vh;   
+}
+nav ul{
+    align-items: flex-end;   
+}
+nav ul li a{
+    padding: 3vh 3vh 2vh 3vh;
+}
+#cursos div{
+    width: 95%;   
+    flex-direction: row;
+    margin-left: 1vh;
+    align-items: flex-end;
+}
+#planos{
+    flex-direction: row;   
+    align-items: flex-end;   
+}
+#planos div{
+    width: 60%;
+    padding: 0 1vh 0 1vh;
+    margin-bottom: 2vh;
+}
+#valores{
+    display: flex;
+}
+#valores div{
+    width: 100%;
+    float: left;
+    padding: 1vh 0 1vh 0;
+}
+#valores div div{
+    width: 33%;
+    text-align: left;
+     
+}
+#valores div div div{
+    width: 70%;  
+}
+}
+
